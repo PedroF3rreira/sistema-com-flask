@@ -1,0 +1,18 @@
+[development]
+key = "development value"
+SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:V4woDo@localhost/sistema"
+SECRET_KEY='CDAECEFSWVRSVVS'
+TITLE='Gestão RH'
+#FLASK_ADMIN_SWATCH='slate'
+EXTENSIONS=[
+	'gestaorh.ext.database',
+	'gestaorh.ext.auth',
+	'gestaorh.ext.admin',
+	'gestaorh.ext.migrations',
+	'gestaorh.blueprints.webui',
+	'gestaorh.blueprints.models',
+]
+
+[production]
+key = "production value"
+SQLALCHEMY_DB_URI = "postgresql://..."

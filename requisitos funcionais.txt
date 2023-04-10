@@ -1,0 +1,20 @@
+R1-1:
+	Sistema de conter autenticação
+	login de usuário
+	logout de usuário
+	cadastro de uauário apenas usuarios autenticados
+
+R1-2:
+	Sistema deve primitir usuario autenticado 
+	cadastrar empregados
+	gerar relatórios de empregados
+	editar empregados
+	excluir empregados
+
+
+R1-3:
+	Sistema deve permitir usuário autenticado
+	criar folha de pagamento
+	editar folha de pagamento
+	excluir folha de pagamaneto
+	gerar relatórios de folha de pagamento
