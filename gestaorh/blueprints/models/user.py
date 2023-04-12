@@ -5,3 +5,4 @@ class User(db.Model):
 	name = db.Column(db.String(50))
 	email = db.Column(db.String(50))
 	description = db.Column(db.String(200))
+	password = db.Column(db.String(244))

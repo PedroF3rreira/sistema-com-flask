@@ -1,19 +1,11 @@
 from flask import Blueprint
-
-from .views import index, user
+from .views import page_login_required
 from .employee_views import index
-
 
 bp = Blueprint("webui", __name__, template_folder="templates")
 
-#views USER
-bp.add_url_rule("/", view_func=index)
-bp.add_url_rule(
-    "/usuario/<id>", view_func=user, endpoint="userview")
-
-
-#PRODUCS
-bp.add_url_rule("/produtos", view_func=index)
+# USER
+bp.add_url_rule("/", view_func=page_login_required, endpoint='home')
 
 
 def init_app(app):
