@@ -8,6 +8,9 @@
 </head>
 <body>
 <header class="">
+{% block messages %}
+{% endblock %}
+{% if is_logged_in() %}
 	<nav class="navbar navbar-expand-lg navbar-dark px-4 bg-dark border-1">
 		<a class="navbar-brand" href="#">Navbar</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +47,7 @@
 			<a class="btn btn-danger" href="{{ url_for('simplelogin.logout') }}">Logout</a>
 		</div>
 	</nav>
+{% endif %}
 </header>
 {% with messages = get_flashed_messages() %}
 	{% if messages %}

@@ -2,7 +2,7 @@ R1-1:
 	Sistema de conter autenticação
 	login de usuário
 	logout de usuário
-	cadastro de uauário apenas usuarios autenticados
+	cadastro de uasuário apenas usuarios autenticados
 
 R1-2:
 	Sistema deve primitir usuario autenticado 

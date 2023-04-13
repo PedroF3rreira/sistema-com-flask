@@ -2,12 +2,17 @@
 key = "development value"
 SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:V4woDo@localhost/sistema"
 SECRET_KEY='CDAECEFSWVRSVVS'
+SIMPLELOGIN_LOGIN_URL = '/entrar/'
+SIMPLELOGIN_LOGOUT_URL = '/sair/'
+SIMPLELOGIN_HOME_URL = '/admin/'
 TITLE='Gestão RH'
+
 #FLASK_ADMIN_SWATCH='slate'
+
 EXTENSIONS=[
 	'gestaorh.ext.database',
 	'gestaorh.ext.auth',
-	'gestaorh.ext.admin',
+	#'gestaorh.ext.admin',
 	'gestaorh.ext.migrations',
 	'gestaorh.blueprints.webui',
 	'gestaorh.blueprints.models',
