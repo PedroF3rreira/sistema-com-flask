@@ -6,6 +6,6 @@ from flask.views import MethodView
 
 
 def admin():
-	return render_template('index.html')
+	return render_template('index.html', title='home page')
 
 page_login_required = login_required(admin)
